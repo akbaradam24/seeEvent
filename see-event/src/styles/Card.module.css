@@ -1,0 +1,53 @@
+.Card {
+  background-color: white;
+  width: 20vw;
+  height: 55vh;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.Card:hover {
+  box-shadow: 2px 4px 16px 2px rgba(33, 68, 87, 0.15);
+}
+
+.card-images {
+  width: 100%;
+  height: 60%;
+}
+
+.card-description {
+  margin-top: 0.3em;
+  padding: 3px 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.link-label {
+  background: #f0f2e9;
+  padding: 0.2em 1em;
+  border-radius: 4px;
+  color: #214457;
+  font-size: 1.375rem;
+}
+
+.link-label:hover {
+  font-weight: 600;
+}
+
+.date {
+  font-size: 1.2rem;
+  color: #373737;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.author {
+  font-size: 1.1rem;
+  color: #999999;
+}

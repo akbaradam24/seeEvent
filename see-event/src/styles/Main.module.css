@@ -1,0 +1,7 @@
+.Main {
+  min-height: 500px;
+  padding: 5em 5.4em;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
