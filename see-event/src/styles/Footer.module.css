@@ -1,0 +1,126 @@
+.Footer {
+  max-width: 100%;
+  padding: 3.5em 5.4em;
+  background-color: #214457;
+  height: 280px;
+}
+
+.site-map {
+  display: flex;
+  gap: 70px;
+}
+
+.logo {
+  width: 174px;
+  margin-bottom: 10px;
+}
+
+.description {
+  width: 34%;
+}
+
+.description p {
+  color: #f8f8f8;
+  font-size: 14px;
+}
+
+.social-media {
+  margin-top: 18px;
+}
+
+.social-media p {
+  margin-bottom: 8px;
+}
+
+.social-media ul {
+  display: flex;
+  gap: 14px;
+}
+
+/* HOVER DI SOCIAL MEDIA ICON */
+
+.facebook:hover {
+  border-radius: 100%;
+  background-color: #4267b2;
+}
+
+.instagram:hover {
+  border-radius: 100%;
+  background-color: #fd1d1d;
+}
+
+.twitter:hover {
+  border-radius: 100%;
+  background-color: #1da1f2;
+}
+
+.youtube:hover {
+  border-radius: 100%;
+  background-color: #ff0000;
+}
+
+/* Service */
+.services {
+  width: 70%;
+  display: flex;
+  gap: 115px;
+}
+
+.services h3 {
+  color: #ffff;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 1.275rem;
+}
+
+.services ul li {
+  font-size: 14px;
+}
+
+.services li {
+  margin-bottom: 10px;
+  color: #e3e3e3;
+}
+
+.links a,
+.categories a {
+  color: white;
+}
+
+.links a:hover,
+.categories a:hover {
+  color: #f2d555;
+}
+
+.categories {
+  flex-basis: 400px;
+}
+
+.contact-us p {
+  color: #f8f8f8;
+  font-size: 14px;
+}
+
+/* Copy Right */
+.copyright-information {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.copyright-information a,
+.copyright-information p {
+  color: #f8f8f8;
+  font-size: 14px;
+}
+
+.copyright-information a:hover {
+  color: #f2d555;
+}
+
+.copyright-information ul {
+  display: flex;
+  gap: 20px;
+  color: #e3e3e3;
+  font-size: 14px;
+}
