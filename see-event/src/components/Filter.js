@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import "./Filter.module.css";
 import styles from "../styles/Filter.module.css";
 import ReactPaginate from "react-paginate";
-import NotFoundImg from "./NotFound.svg";
+import NotFoundImg from "../assets/NotFound.svg";
 function Filter() {
   const [isAvailable, setIsAvailable] = useState(true);
 
