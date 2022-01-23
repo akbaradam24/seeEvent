@@ -1,0 +1,167 @@
+.container {
+  width: 60%;
+  margin: 50px auto;
+  min-height: 60vh;
+}
+
+.main-title {
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.date-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 7px;
+}
+
+.calender {
+  height: 22px;
+}
+
+.calender img {
+  height: 100%;
+  width: 100%;
+}
+
+.date {
+  font-size: 1.2rem;
+}
+
+.label {
+  padding: 2px 12px;
+  color: rgba(33, 68, 87, 1);
+  background-color: #f0f2e9;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.label:hover {
+  font-weight: 700;
+}
+
+.banner-image {
+  height: 60vh;
+}
+
+.banner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Detail of an Event */
+
+.detail-wrapper {
+  min-height: 500px;
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.detail p {
+  font-size: 1.25rem;
+  margin-top: 8px;
+}
+
+.detail {
+  flex: 3;
+}
+
+.author {
+  flex: 1.8;
+  display: flex;
+  gap: 10px;
+}
+/* Set all h3's inside event detail*/
+.detail-wrapper h3,
+.users-commend-wrapper h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Users commend */
+.users-commend-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.commend-text {
+  font-size: 1.2rem;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.commend-box-wrapper {
+  margin-top: 12px;
+}
+
+.commend-box {
+  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-account {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+.account-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.commend-box {
+  width: 320px;
+  min-height: 100px;
+  gap: 10px;
+}
+
+.commend-text-area {
+  margin-top: 10px;
+  resize: none;
+  border-radius: 8px;
+  min-height: 100px;
+  padding: 5px;
+  font-size: 1.4rem;
+}
+
+.submit-commend {
+  background-color: rgba(33, 68, 87, 1);
+  color: white;
+  width: 155px;
+  height: 35px;
+  padding: 8px 0;
+  align-self: flex-end;
+  display: flex;
+  border-radius: 9px;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.submit-commend:hover {
+  filter: brightness(120%);
+}
+
+.submit-commend span {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
