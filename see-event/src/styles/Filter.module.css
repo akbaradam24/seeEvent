@@ -1,0 +1,100 @@
+.container {
+  border: 2px solid yellow;
+  /* background-color: green; */
+  min-height: 500px;
+  width: 90%;
+  margin: auto;
+}
+
+.filterText {
+  margin-bottom: 24px;
+  line-height: 28px;
+  font-size: 20px;
+}
+
+.containerDropdown {
+  position: relative;
+}
+
+/* .containerDropdown select {
+} */
+
+.DropdownFilter {
+  /* background-color: red; */
+  margin: 24px auto;
+  display: flex;
+  gap: 24px;
+}
+
+.labelFilter {
+  font-size: 8px;
+  text-transform: uppercase;
+  color: #777;
+  padding: 4px 0 0 10px;
+  position: absolute;
+}
+
+.Dropdown {
+  padding: 15px 19px 5px 5px;
+  border-radius: 6px;
+  width: 150px;
+}
+
+.line {
+  height: 2px;
+  width: 100%;
+  background-color: #555;
+  margin-bottom: 32px;
+}
+
+.cardsContainer {
+  border: 3px solid green;
+}
+
+.card {
+  height: 300px;
+  background-color: violet;
+  border: 3px solid blue;
+}
+
+.ImageNotFoundContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ImageNotFound {
+  width: 240px;
+  height: 166px;
+}
+
+.textImage {
+  font-size: 16px;
+}
+.pagination {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 96px;
+  margin-bottom: 120px;
+}
+
+.paginationA {
+  display: flex;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.paginationA:hover {
+  background-color: #ddd;
+  border-radius: 4px;
+}
+.paginationB {
+  background-color: #eceeef;
+  border-radius: 4px;
+}
