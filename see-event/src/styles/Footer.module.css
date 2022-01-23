@@ -63,7 +63,6 @@
 .services {
   width: 70%;
   display: flex;
-  gap: 115px;
 }
 
 .services h3 {
@@ -92,8 +91,10 @@
   color: #f2d555;
 }
 
-.categories {
-  flex-basis: 400px;
+.links,
+.categories,
+.contact-us {
+  flex-basis: 250px;
 }
 
 .contact-us p {
