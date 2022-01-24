@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import LogoWhite from "../assets/LogoWhite.svg";
 import search from "../assets/search.svg";
@@ -6,16 +7,16 @@ import styles from "../styles/Hero.module.css";
 import Avatar from "./Avatar";
 
 const Hero = () => {
-  const [isLogged, setIsLogged] = useState(true);
+  const [isLogged, setIsLogged] = useState(false);
 
   // Conditial rendering for authenticated user
   let userLogin = !isLogged ? (
     <ul className={styles["non-user"]}>
       <li>
-        <a href="#">Sign Up</a>
+        <Link to="/register">Sign Up</Link>
       </li>
       <li>
-        <a href="#">Sign In</a>
+        <Link to="/login">Sign In</Link>
       </li>
     </ul>
   ) : (

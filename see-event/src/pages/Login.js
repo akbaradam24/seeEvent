@@ -9,15 +9,13 @@ import Footer from "../components/Footer";
 import LoginForm from "../components/LoginForm";
 
 const Login = () => {
-  
-    return (
-        <div className={styles.LoginContainer}>
-          <Navbar />
-          <LoginForm />
-          <Footer />
-        </div>
-    );
+  return (
+    <div className={styles.LoginContainer}>
+      <Navbar />
+      <LoginForm />
+      <Footer />
+    </div>
+  );
 };
 
 export default Login;
-

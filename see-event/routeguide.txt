@@ -1,0 +1,5 @@
+=====Public=====
+Home
+EventDetail
+Login
+Register
