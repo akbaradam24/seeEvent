@@ -1,11 +1,14 @@
 import "./App.css";
-import Login from "./pages/Login";
-import SearchEvents from "./pages/SearchEvents";
+import Home from "./pages/Home";
+
+import Login from "./pages/Login"
+
+import Footer from "./components/Footer";
+
 function App() {
   return (
     <div className="App">
-      {/* <SearchEvents /> */}
-     <Login />
+      <Login />
     </div>
   );
 }

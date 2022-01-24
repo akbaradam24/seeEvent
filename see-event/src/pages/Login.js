@@ -9,7 +9,7 @@ import LoginForm from "../components/LoginForm";
 const Login = () => {
   
     return (
-        <div className={styles.LoginTest}>
+        <div className={styles.LoginContainer}>
           <Navbar />
           <LoginForm />
           <Footer />
