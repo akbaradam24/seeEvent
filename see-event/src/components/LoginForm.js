@@ -2,7 +2,6 @@ import React from 'react';
 
 import styles from "../styles/LoginForm.module.css";
 
-
 import {useFormik} from "formik";
 
 import *as Yup from 'yup';
@@ -19,7 +18,7 @@ const LoginForm = () => {
         validationSchema: Yup.object({
             email:Yup.string()
                 .email("Invalid email address")
-                .required("email harus diisi"),
+                .required("Please Enter your email"),
             password:Yup.string()
                 .required("Please Enter your password")
                 .min(8, "minimal 8 karakter")
