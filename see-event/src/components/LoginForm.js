@@ -1,10 +1,9 @@
 import React from "react";
+import { useFormik } from "formik";
+import * as Yup from "yup";
+import axios from "axios";
 
 import styles from "../styles/LoginForm.module.css";
-
-import { useFormik } from "formik";
-
-import * as Yup from "yup";
 
 const LoginForm = () => {
   const formik = useFormik({
@@ -19,7 +18,14 @@ const LoginForm = () => {
     }),
 
     onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+      axios({
+        method: "POST",
+        url: "https://see-event-app.herokuapp.com/api/v1/login",
+        data: JSON.stringify(values),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
     },
   });
   return (
