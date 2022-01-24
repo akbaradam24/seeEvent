@@ -1,0 +1,25 @@
+.wrapper-error {
+    display: flex;
+    flex-direction: column;
+    color: rgba(149,164,166,1);
+    justify-content: center;
+    height: 100vh;
+}
+
+.title {
+    font-size: 101px;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 4rem;
+    margin: 3px;
+    padding: 1px;
+    font-weight: normal;
+}
+
+.quote {
+    font-size: 14px;
+}
+
+
