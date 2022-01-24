@@ -5,7 +5,7 @@ import Filter from "../components/Filter";
 export default function SearchEvents() {
   return (
     <div>
-      <Navbar />
+      <Navbar isLogin />
       <Filter />
       <Footer />
     </div>

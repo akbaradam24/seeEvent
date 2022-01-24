@@ -1,10 +1,11 @@
 import "./App.css";
 import Home from "./pages/Home";
-
+import SearchEvents from "./pages/SearchEvents";
 function App() {
   return (
     <div className="App">
-      <Home />
+      <SearchEvents />
+      {/* <Home /> */}
     </div>
   );
 }
