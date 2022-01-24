@@ -2,14 +2,34 @@ import React, { useState } from "react";
 import styles from "../styles/Filter.module.css";
 import ReactPaginate from "react-paginate";
 import NotFoundImg from "../assets/NotFound.svg";
+import Cards from "./Cards";
 function Filter() {
   const [isAvailable, setIsAvailable] = useState(true);
 
   let events = (
-    <div className={styles.cardsContainer}>
-      <div className={styles.card}></div>
-      <div className={styles.card}></div>
+    <div className="">
+      <Cards />
+      <Cards />
+      <div className={styles.pagination}>
+        <ReactPaginate
+          containerClassName={styles.pagination}
+          pageRangeDisplayed={5}
+          marginPagesDisplayed={1}
+          previousLabel={"<"}
+          nextLabel={">"}
+          breakLabel={"..."}
+          pageCount={10}
+          pageLinkClassName={styles.paginationA}
+          activeLinkClassName={styles.paginationB}
+          previousLinkClassName={styles.paginationA}
+          nextLinkClassName={styles.paginationA}
+        />
+      </div>
     </div>
+    // <div className={styles.cardsContainer}>
+    //   <div className={styles.card}></div>
+    //   <div className={styles.card}></div>
+    // </div>
   );
 
   let noEventsImage = (
@@ -59,22 +79,6 @@ function Filter() {
       </div>
       <div className={styles.line}></div>
       {isAvailableEvent}
-
-      <div className={styles.pagination}>
-        <ReactPaginate
-          containerClassName={styles.pagination}
-          pageRangeDisplayed={5}
-          marginPagesDisplayed={1}
-          previousLabel={"<"}
-          nextLabel={">"}
-          breakLabel={"..."}
-          pageCount={10}
-          pageLinkClassName={styles.paginationA}
-          activeLinkClassName={styles.paginationB}
-          previousLinkClassName={styles.paginationA}
-          nextLinkClassName={styles.paginationA}
-        />
-      </div>
     </div>
   );
 }
