@@ -1,18 +1,12 @@
 import "./App.css";
-
-import Home from "./pages/Home";
-
-import Login from "./pages/Login";
-
-import Footer from "./components/Footer";
+import Loader from "./components/Loader";
 
 import Register from "./pages/Register";
 
 function App() {
   return (
     <div className="App">
-      {/* <Login /> */}
-      <Register />
+      <Loader />
     </div>
   );
 }
