@@ -5,11 +5,7 @@ import styles from "../styles/Card.module.css";
 const Card = () => {
   return (
     <div className={styles.Card}>
-      <img
-        src="https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80"
-        alt=""
-        className={styles["card-images"]}
-      />
+      <img src="https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80" alt="" className={styles["card-images"]} />
       <div className={styles["card-description"]}>
         <a href="#" className={styles["link-label"]}>
           Design

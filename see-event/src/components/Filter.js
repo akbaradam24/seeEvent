@@ -3,8 +3,26 @@ import styles from "../styles/Filter.module.css";
 import ReactPaginate from "react-paginate";
 import NotFoundImg from "../assets/NotFound.svg";
 import Cards from "./Cards";
+import axios from "axios";
+
+const categories = ["Photography", "Design", "Lifestyle", "Development", "Marketing", "Business", "Music"];
+const times = ["Today", "Tomorrow", "This Week", "This Month", "This Year", "All Time"];
+const BASE_URL = "https://see-event-app.herokuapp.com/api/v1";
+
 function Filter() {
   const [isAvailable, setIsAvailable] = useState(true);
+  const [filterEvents, setFilterEvents] = useState({
+    category: "",
+    date: "",
+    order: "",
+  });
+
+  // const fetchEvents = () => {
+  //   axios({
+  //     get: "GET",
+  //     url: "http://",
+  //   });
+  // };
 
   let events = (
     <div className="">
@@ -41,14 +59,22 @@ function Filter() {
 
   let isAvailableEvent = isAvailable ? events : noEventsImage;
 
+  const handleChange = (e) => {
+    // console.log(e.target.value);
+    // axios({
+    //   get: "GET",
+    //   url: "https://see-event-app.herokuapp.com/api/v1/event/filter?order=name&page=1",
+    // });
+  };
+
   return (
     <div className={styles.container}>
       <p className={styles.filterText}>Showing 68 Results from Development Category</p>
       <div className={styles.DropdownFilter}>
         <div className={styles.containerDropdown}>
           <label className={styles.labelFilter}>Filter By Date</label>
-          <select className={styles.Dropdown}>
-            <option value="">Today</option>
+          <select onChange={handleChange} className={styles.Dropdown}>
+            <option value="Today">Today</option>
             <option value="">Tomorrow</option>
             <option value="">This Week</option>
             <option value="">This Month</option>
