@@ -12,4 +12,10 @@ const saveTokenAction = (data) => {
   };
 };
 
-export { saveUserAction, saveTokenAction };
+const logoutAction = () => {
+  return {
+    type: "LOGOUT",
+  };
+};
+
+export { saveUserAction, saveTokenAction, logoutAction };

@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import SearchEvents from "./pages/SearchEvents";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
-import MyAccount from "./components/MyAccount";
+import MyAccount from "./pages/MyAccount";
 import ErrorPage from "./pages/ErrorPage";
 
 function App() {
