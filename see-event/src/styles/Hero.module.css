@@ -94,10 +94,12 @@
   width: 100%;
   border: none;
   outline: none;
+  font-size: 20px;
   background-color: transparent;
 }
 
 .form-search button {
+  padding: 6px;
   border: none;
   background-color: #214457;
   color: #fff;
