@@ -4,8 +4,8 @@ import styles from "../styles/ErrorPage.module.css";
 
 const ErrorPage = () => {
   return (
-    <div className="wrapper-error">
-      <div className="error-icon">
+    <div className={styles["wrapper-error"]}>
+      <div className={styles["error-icon"]}>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="400" height="400">
           <path fill="none" d="M0 0h24v24H0z" />
           <path
@@ -14,10 +14,8 @@ const ErrorPage = () => {
           />
         </svg>
       </div>
-      <h1 className="title">404</h1>
-      <h3 className="subtitle">Page not found</h3>
-      <p className="quote">The page you are looking doesn't exist or an other error occured,</p>
-      <p className="quote"> Go back, or head over to weebrl.com to choosen a new direction</p>
+      <h1 className={styles["title"]}>404</h1>
+      <h3 className={styles["subtitle"]}>Page not found</h3>
     </div>
   );
 };
