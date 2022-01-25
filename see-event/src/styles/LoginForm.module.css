@@ -6,12 +6,13 @@
 }
     
 .form-container {
+    width: 600px;
     margin-top: 90px;
-    max-width: 600px;
     height: 500px;  
 }
 
 .title {
+    text-align: center;
     margin-bottom: 31px;
     font-size: 50px;
     font-weight: 700;
@@ -22,7 +23,7 @@
 .form {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 20px;
     
 }
 
@@ -53,6 +54,7 @@
 }
 
 .form a {
+    text-align: center;
     color: #3E89AE;
     font-size: 18px;
     font-weight: bold;
@@ -61,6 +63,7 @@
 
 .form input {
     padding: 0 18px;
+    text-align: left;
     
 }
 
