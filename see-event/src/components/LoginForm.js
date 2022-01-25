@@ -39,6 +39,7 @@ const LoginForm = () => {
                         name="email" 
                         type="email" 
                         placeholder='Email...'
+                        onBlur={formik.handleBlur}
                         onChange={formik.handleChange}
                         value={formik.values.email}
                     />

@@ -19,7 +19,6 @@
 }
 
 .form {
-    text-align: center;
     display: flex;
     flex-direction: column;
     gap: 18px;
@@ -49,9 +48,10 @@
 }
 
  .form a {
-     color: #3E89AE;
-     font-size: 18px;
-     font-weight: bold;
+    text-align: center;
+    color: #3E89AE;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .form input {
