@@ -29,12 +29,7 @@ const RegisterForm = () => {
       firstName: Yup.string().max(6, "Must be 6characters or less").required("nama harus diisi"),
       lastName: Yup.string().min(10, "Must be 10 characters or less").required("nama lengkap harus diisi"),
       email: Yup.string().email("Invalid email address").required("email harus diisi"),
-      password: Yup.string()
-        .required("Please Enter your password")
-        .matches(
-          /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/,
-          "Must Contain 8 Characters, One Uppercase, One Lowercase, One Number and one special case Character"
-        ),
+      password: Yup.string().required("Please Enter your password").matches(/[a-zA-Z]/, 'Password can only contain Latin letters.'),
       confirmPassword: Yup.string().min(8, "Minimum 8 characters").max(15, "Maximal 15 Characters"),
     }),
 
@@ -93,7 +88,7 @@ const RegisterForm = () => {
                 setShowPassword(!showPassword);
               }}
             >
-              {showPassword ? "show" : "hide"}
+              {showConfirmPassword ? <i class="far fa-eye-slash"></i>  : <i class="far fa-eye"></i> }
             </button>
           </label>
           <p>{formik.errors.password}</p>
@@ -111,7 +106,7 @@ const RegisterForm = () => {
                 setShowConfirmPassword(!showConfirmPassword);
               }}
             >
-              {showConfirmPassword ? "show" : "hide"}
+              {showConfirmPassword ? <i class="far fa-eye-slash"></i>  : <i class="far fa-eye"></i> }
             </button>
           </label>
           <p>{formik.errors.confirmPassword}</p>
