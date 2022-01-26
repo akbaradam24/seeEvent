@@ -1,17 +1,4 @@
 .form-container {
-<<<<<<< HEAD
-    width: 600px;
-    margin-top: 90px;
-    height: 500px;  
-}
-
-.title {
-    text-align: center;
-    margin-bottom: 31px;
-    font-size: 50px;
-    font-weight: 700;
-    color: #373737;
-=======
   margin-top: 90px;
   width: 600px;
   height: 500px;
@@ -23,20 +10,12 @@
   font-size: 50px;
   font-weight: 700;
   color: #373737;
->>>>>>> 6d5f92f484a8f15ae02b2c8c06020b40af0af414
 }
 
 .form {
-<<<<<<< HEAD
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    
-=======
   display: flex;
   flex-direction: column;
   gap: 18px;
->>>>>>> 6d5f92f484a8f15ae02b2c8c06020b40af0af414
 }
 
 .form input,
@@ -62,19 +41,6 @@ button {
 }
 
 .form a {
-<<<<<<< HEAD
-    text-align: center;
-    color: #3E89AE;
-    font-size: 18px;
-    font-weight: bold;
-   
-}
-
-.form input {
-    padding: 0 18px;
-    text-align: left;
-    
-=======
   color: #3e89ae;
   font-size: 18px;
   font-weight: bold;
@@ -82,7 +48,6 @@ button {
 
 .form input {
   padding: 0 18px;
->>>>>>> 6d5f92f484a8f15ae02b2c8c06020b40af0af414
 }
 
 input::placeholder {
