@@ -74,14 +74,16 @@ function Filter() {
         },
       })
       .then((res) => {
-        setEventsCoba(res.data.result);
-      })
-      .catch((err) => alert(err.response.data.message));
+        setEventsCoba(res.data.result.rows);
+      });
+    // .catch((err) => alert(err.response.data.message));
   }, [filterEvents]);
 
   return (
     <div className={styles.container}>
-      <p className={styles.filterText}>Showing 68 Results from Development Category</p>
+      <p className={styles.filterText}>
+        Showing {eventsCoba.length} Results from {filterEvents.category} Category
+      </p>
       <div className={styles.DropdownFilter}>
         <div className={styles.containerDropdown}>
           <label className={styles.labelFilter}>Filter By Date</label>
