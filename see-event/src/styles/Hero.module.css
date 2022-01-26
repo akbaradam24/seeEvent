@@ -61,7 +61,7 @@
 .hero-body {
   display: flex;
   margin-top: 12%;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 20%;
 }
@@ -79,7 +79,7 @@
 
 /* Search */
 .form-search {
-  width: 50%;
+  width: 500px;
   height: 35px;
   border-radius: 21px;
   padding: 8px;
@@ -94,10 +94,12 @@
   width: 100%;
   border: none;
   outline: none;
+  font-size: 20px;
   background-color: transparent;
 }
 
 .form-search button {
+  padding: 6px;
   border: none;
   background-color: #214457;
   color: #fff;

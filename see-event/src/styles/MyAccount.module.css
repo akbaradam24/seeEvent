@@ -1,9 +1,17 @@
 .MyAccount {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+
+.container {
   width: 300px;
   height: 200px;
 }
 
-.MyAccount form {
+.container form {
   display: flex;
   flex-direction: column;
   justify-content: center;

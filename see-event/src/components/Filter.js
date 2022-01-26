@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "../styles/Filter.module.css";
+import styles2 from "../styles/Card.module.css";
 import ReactPaginate from "react-paginate";
 import NotFoundImg from "../assets/NotFound.svg";
 import Cards from "./Cards";
@@ -16,7 +17,7 @@ function Filter() {
     date: "",
     order: "",
   });
-
+  const [eventsCoba, setEventsCoba] = useState([]);
   // const fetchEvents = () => {
   //   axios({
   //     get: "GET",
@@ -60,12 +61,23 @@ function Filter() {
   let isAvailableEvent = isAvailable ? events : noEventsImage;
 
   const handleChange = (e) => {
-    // console.log(e.target.value);
-    // axios({
-    //   get: "GET",
-    //   url: "https://see-event-app.herokuapp.com/api/v1/event/filter?order=name&page=1",
-    // });
+    console.log(e.target.name);
+    setFilterEvents({ ...filterEvents, [e.target.name]: e.target.value });
   };
+
+  useEffect(() => {
+    axios
+      .get(`${BASE_URL}/event/filter`, {
+        params: {
+          ...filterEvents,
+          page: 1,
+        },
+      })
+      .then((res) => {
+        setEventsCoba(res.data.result);
+      })
+      .catch((err) => alert(err.response.data.message));
+  }, [filterEvents]);
 
   return (
     <div className={styles.container}>
@@ -73,38 +85,47 @@ function Filter() {
       <div className={styles.DropdownFilter}>
         <div className={styles.containerDropdown}>
           <label className={styles.labelFilter}>Filter By Date</label>
-          <select onChange={handleChange} className={styles.Dropdown}>
-            <option value="Today">Today</option>
-            <option value="">Tomorrow</option>
-            <option value="">This Week</option>
-            <option value="">This Month</option>
-            <option value="">This Year</option>
-            <option value="">All Time</option>
+          <select name="date" onChange={handleChange} className={styles.Dropdown} defaultValue={filterEvents.date}>
+            {times.map((time, index) => (
+              <option key={index} value={time}>
+                {time}
+              </option>
+            ))}
           </select>
         </div>
         <div className={styles.containerDropdown}>
           <label className={styles.labelFilter}>Filter By Category</label>
-          <select className={styles.Dropdown}>
-            <option value="">All Category</option>
-            <option value="">Photography</option>
-            <option value="">Design</option>
-            <option value="">Development</option>
-            <option value="">Marketing</option>
-            <option value="">Business</option>
-            <option value="">Lifestyle</option>
-            <option value="">Music</option>
+          <select name="category" className={styles.Dropdown} onChange={handleChange} defaultValue={filterEvents.category}>
+            {categories.map((category, index) => (
+              <option key={index} value={category}>
+                {category}
+              </option>
+            ))}
           </select>
         </div>
         <div className={styles.containerDropdown}>
           <label className={styles.labelFilter}>sorting By</label>
-          <select className={styles.Dropdown}>
-            <option value="">Date</option>
-            <option value="">Name</option>
+          <select name="order" className={styles.Dropdown} onChange={handleChange} defaultValue={filterEvents.order}>
+            <option value="byDate">Date</option>
+            <option value="byName">Name</option>
           </select>
         </div>
       </div>
       <div className={styles.line}></div>
-      {isAvailableEvent}
+      {/* {isAvailableEvent} */}
+      {eventsCoba.map((evt) => (
+        <div key={evt.id} className={styles2.Card}>
+          <img src={evt.image} alt="" className={styles2["card-images"]} />
+          <div className={styles2["card-description"]}>
+            <a href="#" className={styles2["link-label"]}>
+              {evt.category}
+            </a>
+            <p className={styles2.date}>{evt.date}</p>
+            <h4 className={styles2.title}>{evt.title}</h4>
+            <p className={styles2.author}>By Adit nento</p>
+          </div>
+        </div>
+      ))}
     </div>
   );
 }
