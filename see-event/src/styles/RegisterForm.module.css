@@ -1,64 +1,101 @@
 .Register {
+<<<<<<< HEAD
     width: 600px;
     justify-content: center;
     margin-top: -21px;
+=======
+  width: 600px;
+  justify-content: center;
+>>>>>>> 6d5f92f484a8f15ae02b2c8c06020b40af0af414
 }
 
 .form-container {
-    margin-top: 90px;
-    max-width: 600px;
-    height: 688px;
+  max-width: 580px;
+  height: 688px;
 }
 
 .title {
+<<<<<<< HEAD
     text-align: center;
     margin-bottom: 31px;
     font-size: 50px;
     font-weight: 700;
     color: #373737;
+=======
+  margin-bottom: 31px;
+  font-size: 50px;
+  font-weight: 700;
+  color: #373737;
+>>>>>>> 6d5f92f484a8f15ae02b2c8c06020b40af0af414
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
-.form input, button {
-    border-radius: 10px;
-    height: 60px;
-    padding: 10px;
-    
-
+.form input,
+button {
+  border-radius: 10px;
+  height: 60px;
+  padding: 10px;
 }
 
 .form button {
-    background-color: #214457;
-    color: #FFFFFF;
-    font-size: 33px;
-    font-weight: bold;
-    padding: 7px 0;
-    border: none;
+  background-color: #214457;
+  color: #ffffff;
+  font-size: 33px;
+  font-weight: bold;
+  padding: 7px 0;
+  border: none;
 }
 
 .form button:hover {
-    filter: brightness(120%);
-    cursor: pointer;
-    box-shadow: -5px -5px 3px lightslategray;
+  filter: brightness(120%);
+  cursor: pointer;
 }
 
+<<<<<<< HEAD
  .form a {
     text-align: center;
     color: #3E89AE;
     font-size: 18px;
     font-weight: bold;
+=======
+.form a {
+  color: #3e89ae;
+  font-size: 18px;
+  font-weight: bold;
+>>>>>>> 6d5f92f484a8f15ae02b2c8c06020b40af0af414
 }
 
 .form input {
-    padding: 0 18px;
+  padding: 0 18px;
 }
 
 input::placeholder {
-    font-size: 20px;
+  font-size: 20px;
+}
 
+.show-password {
+  position: relative;
+}
+
+.show-password input {
+  width: 100%;
+}
+
+.show-password button {
+  color: #214457;
+  background: transparent;
+  position: absolute;
+  right: 15px;
+  top: 13px;
+  height: 33px;
+  font-size: 2rem;
+}
+
+.show-password button:hover {
+  filter: (brightness(150%));
 }

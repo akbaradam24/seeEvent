@@ -1,11 +1,5 @@
-.Login {
-    width: 600px;
-    justify-content: center;
-    margin-top: 170px;
-    margin-left: 70vh;
-}
-    
 .form-container {
+<<<<<<< HEAD
     width: 600px;
     margin-top: 90px;
     height: 500px;  
@@ -17,43 +11,58 @@
     font-size: 50px;
     font-weight: 700;
     color: #373737;
+=======
+  margin-top: 90px;
+  width: 600px;
+  height: 500px;
+  text-align: center;
 }
 
+.title {
+  margin-bottom: 31px;
+  font-size: 50px;
+  font-weight: 700;
+  color: #373737;
+>>>>>>> 6d5f92f484a8f15ae02b2c8c06020b40af0af414
+}
 
 .form {
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     gap: 20px;
     
+=======
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+>>>>>>> 6d5f92f484a8f15ae02b2c8c06020b40af0af414
 }
 
-
-.form input, button {
-    border-radius: 10px;
-    height: 60px;
-    padding: 10px;   
-
+.form input,
+button {
+  border-radius: 10px;
+  height: 50px;
+  padding: 10px;
 }
-
 
 .form button {
-    background-color:#214457;
-    color:#FFFFFF;
-    font-size: 33px;
-    font-weight: bold;
-    padding: 7px 0;
-    border: none;
+  background-color: #214457;
+  color: #ffffff;
+  font-size: 23px;
+  font-weight: bold;
+  padding: 7px 0;
+  border: none;
 }
 
-
 .form button:hover {
-    filter: brightness(120%);
-    cursor: pointer;
-    box-shadow: -5px -5px 3px lightslategray;
-
+  filter: brightness(120%);
+  cursor: pointer;
+  box-shadow: -5px -5px 3px lightslategray;
 }
 
 .form a {
+<<<<<<< HEAD
     text-align: center;
     color: #3E89AE;
     font-size: 18px;
@@ -65,20 +74,28 @@
     padding: 0 18px;
     text-align: left;
     
+=======
+  color: #3e89ae;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.form input {
+  padding: 0 18px;
+>>>>>>> 6d5f92f484a8f15ae02b2c8c06020b40af0af414
 }
 
 input::placeholder {
-    font-size: 20px;
-
+  font-size: 20px;
 }
 
-i  {
-    position: absolute;
-    top: 61%;
-    right: 40%;
+i {
+  position: absolute;
+  top: 61%;
+  right: 40%;
 }
 
 i:hover {
-    color: #00fac4;
-    cursor: pointer;
+  color: #00fac4;
+  cursor: pointer;
 }
