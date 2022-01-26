@@ -1,8 +1,8 @@
 .form-container {
-  margin-top: 90px;
-  width: 600px;
-  height: 500px;
-  text-align: center;
+  margin-top: 143px;
+    width: 600px;
+    height: 577px;
+    text-align: center;
 }
 
 .title {
@@ -13,6 +13,7 @@
 }
 
 .form {
+  text-align: left;
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -37,10 +38,10 @@ button {
 .form button:hover {
   filter: brightness(120%);
   cursor: pointer;
-  box-shadow: -5px -5px 3px lightslategray;
 }
 
 .form a {
+  text-align:center;
   color: #3e89ae;
   font-size: 18px;
   font-weight: bold;
@@ -52,6 +53,24 @@ button {
 
 input::placeholder {
   font-size: 20px;
+}
+
+.show-password {
+  position: relative;
+}
+
+.show-password input {
+  width: 100%;
+}
+
+.show-password button {
+  color: #214457;
+  background: transparent;
+  position: absolute;
+  right: 15px;
+  top: -3px;
+  height: 33px;
+  font-size: 2rem;
 }
 
 i {

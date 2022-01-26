@@ -29,7 +29,7 @@ const RegisterForm = () => {
       firstName: Yup.string().max(6, "Must be 6characters or less").required("nama harus diisi"),
       lastName: Yup.string().min(10, "Must be 10 characters or less").required("nama lengkap harus diisi"),
       email: Yup.string().email("Invalid email address").required("email harus diisi"),
-      password: Yup.string().required("Please Enter your password").matches(/[a-zA-Z]/, 'Password can only contain Latin letters.'),
+      password: Yup.string().required("Please Enter your password").min(8,"Password is too short - should be 8 chars minimum.").matches(/[a-zA-Z]/, 'Password can only contain Latin letters.'),
       confirmPassword: Yup.string().min(8, "Minimum 8 characters").max(15, "Maximal 15 Characters"),
     }),
 
