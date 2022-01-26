@@ -1,9 +1,16 @@
+.cardContainer {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  /* justify-content: start - end; */
+  margin: auto;
+}
+
 .Card {
   background-color: white;
-  width: 20vw;
-  height: 55vh;
+  flex-basis: calc((100% - (3 * 24px)) / 4);
+
   border-radius: 8px;
-  overflow: hidden;
 }
 
 .Card:hover {
@@ -12,6 +19,7 @@
 
 .card-images {
   width: 100%;
+  overflow: hidden;
   height: 60%;
 }
 

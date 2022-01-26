@@ -26,9 +26,22 @@ function Filter() {
   // };
 
   let events = (
-    <div className="">
-      <Cards />
-      <Cards />
+    <>
+      <div className={styles2.cardContainer}>
+        {eventsCoba.map((evt) => (
+          <div key={evt.id} className={styles2.Card}>
+            <img src={evt.image} alt="" className={styles2["card-images"]} />
+            <div className={styles2["card-description"]}>
+              <a href="#" className={styles2["link-label"]}>
+                {evt.category}
+              </a>
+              <p className={styles2.date}>{evt.date}</p>
+              <h4 className={styles2.title}>{evt.title}</h4>
+              <p className={styles2.author}>By Adit nento</p>
+            </div>
+          </div>
+        ))}
+      </div>
       <div className={styles.pagination}>
         <ReactPaginate
           containerClassName={styles.pagination}
@@ -44,7 +57,7 @@ function Filter() {
           nextLinkClassName={styles.paginationA}
         />
       </div>
-    </div>
+    </>
     // <div className={styles.cardsContainer}>
     //   <div className={styles.card}></div>
     //   <div className={styles.card}></div>
@@ -75,8 +88,8 @@ function Filter() {
       })
       .then((res) => {
         setEventsCoba(res.data.result.rows);
-      });
-    // .catch((err) => alert(err.response.data.message));
+      })
+      .catch((err) => alert("Wadoooo ilang bos datanya"));
   }, [filterEvents]);
 
   return (
@@ -114,8 +127,8 @@ function Filter() {
         </div>
       </div>
       <div className={styles.line}></div>
-      {/* {isAvailableEvent} */}
-      {eventsCoba.map((evt) => (
+      {isAvailableEvent}
+      {/* {eventsCoba.map((evt) => (
         <div key={evt.id} className={styles2.Card}>
           <img src={evt.image} alt="" className={styles2["card-images"]} />
           <div className={styles2["card-description"]}>
@@ -127,7 +140,7 @@ function Filter() {
             <p className={styles2.author}>By Adit nento</p>
           </div>
         </div>
-      ))}
+      ))} */}
     </div>
   );
 }

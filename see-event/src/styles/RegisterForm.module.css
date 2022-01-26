@@ -1,12 +1,7 @@
 .Register {
-<<<<<<< HEAD
   width: 600px;
   justify-content: center;
-=======
-    width: 600px;
-    justify-content: center;
-    margin-top: -21px;
->>>>>>> a7aaf2253902119b0fd88eecb3c5e6b97027d0ab
+  margin-top: -21px;
 }
 
 .form-container {
@@ -15,18 +10,11 @@
 }
 
 .title {
-<<<<<<< HEAD
+  text-align: center;
   margin-bottom: 31px;
   font-size: 50px;
   font-weight: 700;
   color: #373737;
-=======
-    text-align: center;
-    margin-bottom: 31px;
-    font-size: 50px;
-    font-weight: 700;
-    color: #373737;
->>>>>>> a7aaf2253902119b0fd88eecb3c5e6b97027d0ab
 }
 
 .form {
@@ -56,18 +44,11 @@ button {
   cursor: pointer;
 }
 
-<<<<<<< HEAD
 .form a {
+  text-align: center;
   color: #3e89ae;
   font-size: 18px;
   font-weight: bold;
-=======
- .form a {
-    text-align: center;
-    color: #3E89AE;
-    font-size: 18px;
-    font-weight: bold;
->>>>>>> a7aaf2253902119b0fd88eecb3c5e6b97027d0ab
 }
 
 .form input {
